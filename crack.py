@@ -36,10 +36,7 @@ try:
 except (requests.ConnectionError, requests.Timeout) as exceptions:
     print(f"{m}[!] check your internet connection!{z}")
     sys.exit()
-try:
-    import alive_progress
-except ImportError:
-    os.system("pip install alive_progress")
+
 
 #logo tools
 logo = f"""{b}
