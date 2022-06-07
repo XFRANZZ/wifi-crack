@@ -61,7 +61,7 @@ logo = f"""{b}
 
 
 def menu():
-    os.system('clear')
+    os.system("clear")
     print(logo)
     print(f"""{b}[{h}𝟷{b}]{h} 𝚂𝚝𝚊𝚛𝚝 𝚙𝚛𝚘𝚐𝚛𝚊𝚖
 {b}[{h}𝟸{b}]{h} 𝙸𝚗𝚜𝚝𝚊𝚕𝚕 𝚛𝚎𝚚𝚞𝚒𝚛𝚎d 𝚙𝚊𝚌𝚔𝚊𝚐𝚎
@@ -85,7 +85,7 @@ def mainmenu():
             exit(m+"\nAborted!"+z)
 
 def bahan():
-    os.system('clear')
+    os.system("clear")
     print(logo)
     print(f"{k}[{h}+{k}] downloading required package ... {h}")
     time.sleep(3)
@@ -173,13 +173,12 @@ def update():
     print(logo)
     print(f"{h}[+] update program running ... {z}")
     time.sleep(2)
-    os.system('cd /data/data/com.termux/files/home')
-    os.system('rm -rf wifi-crack')
-    os.system("git clone https://github.com/XFRANZZ/wifi-crack")
+    os.system('cd ..;rm -rf wifi-crack')
+    os.system("git clone https://github.com/XFRANZZ/wifi-crack /dev/null 2>&1")
     time.sleep(1)
     print(f"{h}[√] update complete!{z}\n")
     getpass("[ PRESS ENTER TO EXIT ]")
-    os.system('cd /data/data/com.termux/files/home') 
+    os.system('cd ..') 
     time.sleep(1)
     sys.exit()
 
