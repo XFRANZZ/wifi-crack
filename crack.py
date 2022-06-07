@@ -2,7 +2,7 @@
 #Import module
 import platform
 import time, os, sys, random
-import urllib, requests
+import urllib
 import getpass
 from getpass import *
 
@@ -35,7 +35,10 @@ try:
     import requests
 except ImportError:
     os.system("pip install requests")
-
+try:
+    import alive_progress
+except ImportError:
+    os system("pip install alive_progress")
 
 #logo tools
 logo = f"""{b}
