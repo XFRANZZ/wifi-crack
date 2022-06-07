@@ -21,6 +21,12 @@ pi = '\033[1;35m' # ping (pink)
 cyan = '\033[1;36m'  # biru muda (cyan)
 z = '\033[0m'     # default / white
 
+
+try:
+    import requests
+except ImportError:
+    os.system("pip install requests")
+
 url = "http://www.google.com"
 timeout = 5
 try:
@@ -30,11 +36,6 @@ try:
 except (requests.ConnectionError, requests.Timeout) as exceptions:
     print(f"{m}[!] check your internet connection!{z}")
     sys.exit()
-
-try:
-    import requests
-except ImportError:
-    os.system("pip install requests")
 try:
     import alive_progress
 except ImportError:
