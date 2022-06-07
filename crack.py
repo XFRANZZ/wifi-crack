@@ -2,7 +2,7 @@
 #Import module
 import platform
 import time, os, sys, random
-import urllib, bs4, requests
+import urllib, requests
 import getpass
 from getpass import *
 
@@ -30,6 +30,11 @@ try:
 except (requests.ConnectionError, requests.Timeout) as exceptions:
     print(f"{m}[!] check your internet connection!{z}")
     sys.exit()
+
+try:
+    import requests
+except ImportError:
+    os.system("pip install requests")
 
 
 #logo tools
