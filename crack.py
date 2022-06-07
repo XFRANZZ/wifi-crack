@@ -173,6 +173,7 @@ def update():
     time.sleep(1)
     print(f"{h}[√] update complete!{z}\n")
     getpass("[ PRESS ENTER TO EXIT ]")
+    os.system('cd $HOME') 
     time.sleep(1)
     sys.exit()
 
