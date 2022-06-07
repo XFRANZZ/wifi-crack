@@ -167,12 +167,14 @@ def update():
     print(logo)
     print(f"{h}[+] update program running ... {z}")
     time.sleep(2)
+    os.system('cd $HOME')
+    os.system('rm -rf wifi-crack')
     os.system("git clone https://github.com/XFRANZZ/wifi-crack")
     time.sleep(1)
     print(f"{h}[√] update complete!{z}\n")
-    getpass("[ PRESS ENTER TO RESTART ]")
+    getpass("[ PRESS ENTER TO EXIT ]")
     time.sleep(1)
-    menu()
+    sys.exit()
 
 
 menu()
