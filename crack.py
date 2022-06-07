@@ -38,7 +38,7 @@ except ImportError:
 try:
     import alive_progress
 except ImportError:
-    os system("pip install alive_progress")
+    os.system("pip install alive_progress")
 
 #logo tools
 logo = f"""{b}
