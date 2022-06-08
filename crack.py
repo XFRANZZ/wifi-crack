@@ -1,4 +1,4 @@
-# coding: -_utf:8_-
+# coding: _*_(utf:8)_*_
 #Import module
 import platform
 import time, os, sys, random
@@ -175,7 +175,7 @@ def update():
     time.sleep(2)
     os.system('cd $HOME ;cd /data/data/com.termux/files/home')
     print(os.path.exists('wifi-crack'))
-    os.system('rm -rf wifi-crack')
+    os.system('rm --dir wifi-crack')
     os.system("git clone https://github.com/XFRANZZ/wifi-crack")
     time.sleep(1)
     print(f"{h}[√] update complete!{z}\n")
