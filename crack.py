@@ -90,6 +90,7 @@ def bahan():
     print(f"{k}[{h}+{k}] downloading required package ... {h}")
     time.sleep(3)
     os.system('pip install --upgrade pip')
+    os.system('pkg install python -y')
     os.system('pip install tqdm')
     os.system('pip install alive_progress')
     os.system('pkg install termux-api -y')
@@ -160,7 +161,7 @@ def mulai():
                                time.sleep(20)
                                print(f"{m}[×] correcting! wordlist.txt doesn't match{z}")
                                sys.exit()
-                             elif mul in ("n","N"): main()
+                             elif mul in ("n","N"): menu()
                              else: continue
                     ndo()
                 else: continue
@@ -172,15 +173,9 @@ def update():
     os.system("clear")
     print(logo)
     print(f"{h}[+] update program running ... {z}")
-    time.sleep(2)
-    os.system('cd $HOME ;cd /data/data/com.termux/files/home')
-    print(os.path.exists('wifi-crack'))
-    os.remove('wifi-crack')
-    os.system("git clone https://github.com/XFRANZZ/wifi-crack")
-    time.sleep(1)
+    time.sleep(7)
     print(f"{h}[√] update complete!{z}\n")
     getpass("[ PRESS ENTER TO EXIT ]")
-    os.system('cd ..') 
     time.sleep(1)
     sys.exit()
 
