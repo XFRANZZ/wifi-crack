@@ -1,4 +1,4 @@
-# coding: _*_(utf:8)_*_
+# coding: -*- utf:8 -*-
 #Import module
 import platform
 import time, os, sys, random
