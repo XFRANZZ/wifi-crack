@@ -140,12 +140,12 @@ def mulai():
     def main():
         while True:
             try:
-                ndi=input(f"{h}[?] input wifi target name: ")
+                ndi=input(f"{h}[?] wifi target name: ")
                 if ndi in (""): main()
                 elif ndi in str(ndi):
                     def ndo():
                         while True:
-                             ndx=input(f"{h}[?] input ssid target number: ")
+                             ndx=input(f"{h}[?] bssid target number: ")
                              if ndi in ("", " "): ndo()
                              mul=input(f"{h}[?] start crack now [y/n] > ")
                              if mul in ("y","Y"):
