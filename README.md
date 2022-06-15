@@ -1,7 +1,7 @@
 ## Caution!
 * Package installation is needed so that the program runs properly, if an error occurs, please update the program
 
-#Install package:
+## Install package:
 * pkg install python
 * pip install requests
 * pip install --upgrade pip
