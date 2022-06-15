@@ -104,8 +104,11 @@ def bahan():
     print(f"{garis}\n{k}[{h}+{k}] installing file ...{z}")
     time.sleep(5)
     print(f"{h}[√] installing package successfully!\n{z}")
-    getpass("[ PRESS ENTER TO CONTINUE ]")
-    menu()
+    getpass("[ PLEASE RESTART PROGRAM! ENTER TO CONTINUE ]")
+    os.system("clear")
+    print(logo)
+    print(f"\n{h}[*] Usage: python or python3{z}\n")
+    sys.exit()
 
 def scan():
     os.system('clear')
