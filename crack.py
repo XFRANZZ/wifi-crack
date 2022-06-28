@@ -34,7 +34,7 @@ try:
     print(f"{h}[+] OPEN THE PROGRAM ...{z}")
     time.sleep(1)
 except (requests.ConnectionError, requests.Timeout) as exceptions:
-    print(f"{m}[!] check your internet connection!{z}")
+    print(f"\n{m}[!] check your internet connection!{z}")
     sys.exit()
 
 
