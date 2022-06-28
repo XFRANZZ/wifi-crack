@@ -107,7 +107,7 @@ def bahan():
     getpass("[ PLEASE RESTART PROGRAM! ENTER TO CONTINUE ]")
     os.system("clear")
     print(logo)
-    print(f"\n{h}[*] Usage: python or python3{z}\n")
+    print(f"\n{h}[*] Usage: python3 crack.py{z}\n")
     sys.exit()
 
 def scan():
