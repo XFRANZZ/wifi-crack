@@ -90,10 +90,10 @@ def bahan():
     print(f"{k}[{h}+{k}] downloading required package ... {h}")
     time.sleep(3)
     os.system('pip install --upgrade pip')
-    os.system('pkg install python -y')
+    os.system('apt install python -y')
     os.system('pip install tqdm')
     os.system('pip install alive_progress')
-    os.system('pkg install termux-api -y')
+    os.system('apt install termux-api -y')
     os.system('pip install mechanize requests')
     from alive_progress import alive_bar
     for total in 5000, 7000, 4000, 0:
